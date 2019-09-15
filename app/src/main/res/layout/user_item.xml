@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10sp"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:id="@+id/profile_img"
+        app:civ_border_width="5dp"
+        app:civ_border_color="#000000"
+        android:src="@drawable/ic_person_black_24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="username"
+        android:id="@+id/username"
+        android:layout_toEndOf="@id/profile_img"
+        android:layout_toRightOf="@id/profile_img"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="5sp"
+        android:textSize="18sp"
+        android:layout_height="wrap_content" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="15sp"
+        android:layout_height="15sp"
+        android:id="@+id/img_on"
+        android:visibility="gone"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="-15dp"
+        app:civ_border_width="10dp"
+        android:layout_below="@id/username"
+        app:civ_border_color="#05df29"
+        android:layout_toRightOf="@id/profile_img"
+        android:layout_toEndOf="@id/profile_img"
+        android:src="@mipmap/ic_launcher"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="15sp"
+        android:layout_height="15sp"
+        android:id="@+id/img_off"
+        android:visibility="gone"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="-15dp"
+        app:civ_border_width="10dp"
+        android:layout_below="@id/username"
+        app:civ_border_color="#bfbfbf"
+        android:layout_toRightOf="@id/profile_img"
+        android:layout_toEndOf="@id/profile_img"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_toRightOf="@id/profile_img"
+        android:layout_marginTop="2sp"
+        android:paddingTop="3sp"
+        android:id="@+id/last_msg"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginLeft="20dp"
+        android:maxLines="1"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
